@@ -1982,6 +1982,7 @@ textarea, input {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-left: auto;
 }
 
 .fifty-windows__item_special .fifty-windows__item-body {
