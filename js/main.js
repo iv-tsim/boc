@@ -56,6 +56,20 @@ $(document).ready(function() {
             }
 
         });
+        let lookSlider = new Swiper('.look-slider', {
+
+            spaceBetween: 30,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            observer: true,
+            observeParents: true,
+            touchEventsTarget: 'wrapper',
+            navigation: {
+                nextEl: '.slider-arrow.slider-arrow_next.look-arrow',
+                prevEl: '.slider-arrow.slider-arrow_prev.look-arrow',
+            }
+
+        });
         let lheroSlider = new Swiper('.lhero-slider', {
 
             spaceBetween: 0,
