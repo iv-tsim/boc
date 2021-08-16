@@ -1,0 +1,38 @@
+.socials
+    display: flex
+    align-items: center
+    &-item
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        background-color: $grey
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        margin-right: 15px
+        transition: .3s background-color
+        &:last-child
+            margin-right: 0
+        svg
+            fill: #fff
+            transition: .3s fill
+        &:hover
+            background-color: $red
+    &_white
+        .socials-item
+            background-color: #fff
+            svg
+                fill: $red
+            &:hover
+                background-color: $red
+                svg
+                    fill: #fff
+    &_black
+        .socials-item
+            background-color: #000
+            svg
+                fill: #fff
+            &:hover
+                background-color: $red
+                svg
+                    fill: #fff

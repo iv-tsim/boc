@@ -1,0 +1,42 @@
+.about
+    padding-top: 110px
+    padding-bottom: 140px
+    position: relative
+    z-index: 2
+    &-main
+        grid-column: 2 / 12
+        position: relative
+        z-index: 1
+    &-title
+        margin-bottom: 50px
+    &-text
+        max-width: 420px
+        margin-bottom: 50px
+    &-more
+        color: $red
+        display: flex
+        align-items: center
+        span
+            margin-right: 10px
+            font-family: 'Roboto', sans-serif
+            font-weight: 700
+            font-size: 14px
+            text-transform: uppercase
+        svg
+            fill: $red
+    &-img
+        position: absolute
+        bottom: 0
+        left: 33%
+        z-index: 1
+    &-list
+        grid-column: 14 / 25
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-row-gap: 200px
+    &-item
+        &__img
+            margin-bottom: 20px
+            min-height: 56px
+        &__title
+            margin-bottom: 5px

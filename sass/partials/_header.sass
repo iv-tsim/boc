@@ -1,0 +1,49 @@
+.header
+    display: flex
+    align-items: center
+    padding: 25px 60px
+    justify-content: space-between
+    box-shadow: $shadow1
+    &-menu
+        &__item
+            color: #000
+            font-family: 'DINPro-Condensed', sans-serif
+            font-size: 20px
+            font-weight: 400
+            margin-right: 30px
+            transition: .3s color
+            &_big
+                font-weight: 700
+                text-transform: uppercase
+                margin-right: 50px
+            &:last-child
+                margin-right: 0
+            &:hover
+                color: $red
+    &-phone
+        font-family: 'Roboto', sans-serif
+        font-size: 20px
+        font-weight: 700
+        color: #000
+        transition: .3s color
+        &:hover
+            color: $red
+    &-burger
+        display: none
+        flex-direction: column
+        justify-content: space-between
+        width: 37px
+        height: 34px
+        margin-right: -10px
+        margin-bottom: -5px
+        padding: 10px
+
+        div
+            height: 2px
+            background-color: #000
+
+            &:nth-child(2)
+                margin: 4px 0
+
+        @media (max-width: 1200px)
+            display: flex

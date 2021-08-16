@@ -1,0 +1,22 @@
+.breadcrumbs
+    display: flex
+    padding: 40px 0
+    &-item
+        color: #000
+        transition: 0.3s color
+        &:hover
+            color: $red
+        &.inactive
+            color: $grey
+            &:hover
+                color: $grey
+    &-dec
+        margin: 0 20px
+    &_white
+        .breadcrumbs-item
+            color: #fff
+            &:hover
+                color: $red
+            &.inactive
+                &:hover
+                    color: #fff

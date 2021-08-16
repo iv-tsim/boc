@@ -1,0 +1,55 @@
+.footer
+    background-color: #000
+    color: #fff
+    padding-top: 75px
+    padding-bottom: 120px
+    font-family: 'CenturyGothic', sans-serif
+    &-logo
+        color: #fff
+        margin-bottom: 50px
+        max-width: 430px
+        b
+            font-family: 'CenturyGothic', sans-serif
+    &-left
+        grid-column: 12 span / auto
+        &__item
+            margin-bottom: 15px
+            max-width: 300px
+            font-size: 12px
+            &:last-child
+                margin-bottom: 0
+            a
+                color: #fff
+    &-menu
+        grid-column: 5 span / auto
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &__item
+            color: #fff
+            font-size: 14px
+            margin-bottom: 20px
+            transition: .3s color
+            &:last-child
+                margin-bottom: 0
+            &:hover
+                color: $red
+            &_big
+                text-transform: uppercase
+                font-weight: 700
+    &-contacts
+        grid-column: 7 span / auto
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &-phone
+        font-weight: 700
+        color: #fff
+        margin-bottom: 10px
+        transition: .3s color
+        &:hover
+            color: $red
+    &-address
+        margin-bottom: 30px
+    &-socials
+        margin-bottom: 50px

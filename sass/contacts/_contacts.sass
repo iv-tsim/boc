@@ -1,0 +1,60 @@
+.contacts
+    position: relative
+    padding-bottom: 120px
+    &-title
+        margin-bottom: 90px
+        position: relative
+        z-index: 1
+    &-grid
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        z-index: 1
+    &-form
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 30px
+        margin-bottom: 30px
+        &__wrapper
+            max-width: 550px
+        &__title
+            margin-bottom: 90px
+        &__textarea
+            grid-column: 2 span / auto
+            resize: none
+            min-height: 150px
+        &__bottom
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__policy
+            margin-right: 25px
+            font-size: 11px
+            color: #969696
+            font-family: 'Montserrat'
+            a
+                color: $red
+        &__submit
+            min-width: 250px
+            border: none
+    &-phone
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        a
+            color: #000
+            margin-right: 35px
+    &-address
+        margin-top: 60px
+        margin-bottom: 10px
+    &-email
+        color: #000
+        transition: .3s color
+        margin-bottom: 60px
+        &:hover
+            color: $red
+
+.map
+    width: 100%
+    height: 500px

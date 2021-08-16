@@ -1,0 +1,39 @@
+.lines
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    z-index: 0
+    overflow: hidden
+    background-image: linear-gradient(180deg, transparent 399px, $lightGrey 1px)
+    background-repeat: repeat
+    background-size: 100% 400px
+    pointer-events: none
+    &-container
+        position: relative
+        width: 100%
+        height: 100%
+    &-line
+        position: absolute
+        height: 100%
+        width: 1px
+        background-color: $lightGrey
+        &_center
+            left: 50%
+        &_left
+            left: 15px
+        &_right
+            right: 15px
+        &_midleft
+            left: 25%
+        &_midright
+            right: 25%
+    &_white
+        background-image: linear-gradient(180deg, transparent 399px, #fff 1px)
+        .lines-line
+            background-color: #fff
+    &_grey
+        background-image: linear-gradient(180deg, transparent 399px, $grey 1px)
+        .lines-line
+            background-color: $grey

@@ -1,0 +1,53 @@
+.lhero
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    color: #fff
+    position: relative
+    &-container
+        position: relative
+        z-index: 3
+    &-main
+        grid-column: 2 / 25
+    &-title
+        max-width: 900px
+        color: $red
+        margin-bottom: 40px
+        span
+            color: #fff
+    &-subtitle
+        margin-bottom: 80px
+    &-bottom
+        display: flex
+        align-items: center
+        margin-bottom: 174px
+        &__main
+            max-width: 300px
+            .h4
+                margin-bottom: 10px
+    &-btn
+        margin-right: 180px
+    &-arrows
+        position: relative
+        width: calc(50% + 1px)
+        z-index: 3
+        background-color: #fff
+        bottom: 0
+        left: 0
+        display: flex
+        justify-content: flex-end
+        .slider-arrows
+            transform: translateX(50%)
+            flex-direction: column-reverse
+    .lines
+        z-index: 2
+    &-slider
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        &__item
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover

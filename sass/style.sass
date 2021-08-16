@@ -1,0 +1,95 @@
+@import './general/variables'
+@import './general/fonts'
+@import './general/text'
+
+*, *::before, *::after
+    box-sizing: border-box
+
+*
+    outline: none !important
+    padding: 0
+    margin: 0
+
+body
+    font-family: 'Montserrat', sans-serif
+    font-size: 18px
+    font-weight: 400
+    color: #000000
+    background-color: #fff
+
+a
+    text-decoration: none
+    display: inline-block
+
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    width: 100%
+    overflow-x: hidden
+
+.content
+    flex: 1 0 auto
+
+.footer
+    flex: 0 0 auto
+
+.container
+    max-width: 1630px
+    padding: 0 15px
+    margin: 0 auto
+    &_small
+        max-width: 1495px
+
+.grid
+    display: grid
+    grid-template-columns: repeat(24, 1fr)
+    grid-gap: 40px
+
+textarea, input
+    -webkit-appearance: none
+    -moz-appearance: none
+    border-radius: 0
+
+.policy
+    transition: .3s color
+    &:hover
+        color: $red
+
+@import './partials/btn'
+@import './partials/header'
+@import './partials/logo'
+@import './partials/slider'
+@import './partials/footer'
+@import './partials/socials'
+@import './partials/menu'
+@import './partials/lines'
+@import './partials/breadcrumbs'
+@import './partials/calc'
+@import './partials/input'
+@import './partials/modal'
+
+@import './index/hero'
+@import './index/services'
+@import './index/about'
+@import './index/dec'
+
+@import './windows/lhero'
+
+@import './contacts/contacts'
+
+@import './single/single'
+
+
+.alertify-notifier .ajs-message.ajs-warning
+    background: white
+    -webkit-box-shadow: 0 0 3px #333333
+    box-shadow: 0 0 3px #333333
+
+.alertify-notifier .ajs-message.ajs-success
+    color: #fff
+    background: rgba(40, 136, 62, 0.9)
+    text-shadow: 0 0 1px rgba(0,0,0,.5)
+
+.alertify-notifier
+    z-index: 99998
