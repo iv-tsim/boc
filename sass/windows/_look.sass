@@ -1,0 +1,45 @@
+.look
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-slider
+        &__wrapper
+            width: 43.75%
+            position: relative
+            z-index: 1
+        &__item
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            &-sizer
+                padding-bottom: 93%
+        &__arrows
+            position: absolute
+            right: 0
+            bottom: 0
+            flex-direction: row-reverse
+            z-index: 2
+            transform: translateX(50%)
+    &-arrow
+        margin: 0
+    &-main
+        position: relative
+        z-index: 1
+        width: 50%
+        padding-right: calc((100% - 1600px) / 2)
+    &-title
+        margin-bottom: 30px
+    &-text
+        margin-bottom: 30px
+        p
+            margin-bottom: 10px
+            &:last-child
+                margin-bottom: 0
+    &-warranty
+        display: flex
+        align-items: center
+        img
+           margin-right: 25px
+        span
+            color: $red 

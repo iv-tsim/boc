@@ -1,0 +1,62 @@
+.mistakes
+    position: relative
+    background-image: url(../img/window/dec.svg)
+    background-repeat: no-repeat
+    background-position: 90% bottom
+    &-container
+        position: relative
+        z-index: 1
+    &-main
+        grid-column: 2 / 11
+        background-color: $lightGrey
+        position: relative
+        padding: 70px 0
+        padding-right: 60px
+        &::after
+            position: absolute
+            display: block
+            content: ''
+            top: 0
+            right: 100%
+            width: 100%
+            height: 100%
+            background-color: $lightGrey
+    &-title
+        margin-bottom: 25px
+    &-subtitle
+        margin-bottom: 70px
+    &-advantages
+        grid-column: 13 / 24
+        padding: 70px 0
+        &__title
+            margin-bottom: 90px
+        &__list
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 80px
+        &__item
+            &-dec
+                height: 20px
+                width: 3px
+                background-color: $red
+                margin-bottom: 5px
+            &-title
+                margin-bottom: 10px
+    &-note
+        padding-top: 80px
+        padding-bottom: 140px
+        grid-column: 2 / 25
+        &__title
+            margin-bottom: 15px
+        &__text
+            max-width: 600px
+            margin-bottom: 40px
+        &__link
+            display: flex
+            align-items: center
+            text-transform: uppercase
+            color: $red
+            font-family: 'Roboto', sans-serif
+            font-size: 14px
+            span
+                margin-right: 10px
