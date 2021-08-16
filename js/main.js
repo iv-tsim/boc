@@ -2,6 +2,24 @@ $(document).ready(function() {
 
     $('input[type=tel]').mask("+7 (999) 999-99-99");
 
+    let barWidth = 100;
+
+    if ($(window).width() >= 1630) {
+        barWidth = 800;
+    } else {
+        barWidth = $(window).width() / 2 - 15;
+    }
+
+    $('.fifty-price__input').jRange({
+        from: 0,
+        to: 100,
+        step: 1,
+        scale: [0, 25, 50, 75, 100],
+        width: barWidth,
+        showLabels: true,
+        snap: true
+    });
+
 });
 
 (function() {

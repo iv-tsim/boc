@@ -1,0 +1,37 @@
+.steps
+    padding-top: 60px
+    padding-bottom: 120px
+    position: relative
+    &-container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        z-index: 1
+    &-main
+        width: 50%
+    &-list
+        width: 50%
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-column-gap: 80px
+        grid-row-gap: 60px
+    &-item
+        &__number
+            font-size: 72px
+            font-weight: 700
+            font-family: 'Montserrat', sans-serif
+            color: $grey
+            margin-left: -25px
+            transition: .3s color
+            &-wrapper
+                overflow: hidden
+                margin-bottom: 10px
+        &__title
+            margin-bottom: 5px
+        &:hover
+            .steps-item__number
+                color: $red
+    &-title
+        max-width: 600px
+        margin-bottom: 70px

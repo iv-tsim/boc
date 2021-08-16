@@ -1,0 +1,46 @@
+.result
+    position: relative
+    padding-top: 180px
+    padding-bottom: 100px
+    background-image: url(../img/ceilings/dec.svg)
+    background-repeat: no-repeat
+    background-position: 10% bottom
+    &-container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        z-index: 1
+    &-main
+        width: 50%
+        padding-top: 70px
+    &-title
+        max-width: 500px
+        margin-bottom: 90px
+        div
+            color: $red
+    &-list
+        width: 50%
+        background-color: $lightGrey
+        padding-left: 60px
+        padding-top: 70px
+        padding-bottom: 100px
+        position: relative
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 60px
+        &::after
+            position: absolute
+            display: block
+            content: ''
+            background-color: $lightGrey
+            height: 100%
+            width: 100%
+            left: 100%
+            top: 0
+    &-item
+        &__img
+            min-height: 50px
+            margin-bottom: 20px
+        &__title
+            margin-bottom: 20px
