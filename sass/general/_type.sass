@@ -23,10 +23,6 @@
         h5
             margin-top: 15px
         ul, ol
-            margin-top: 15px
-            font-size: 20px
-            line-height: 150%
-        ol
             margin-top: 25px
     a
         color: #000 
@@ -49,7 +45,7 @@
         li
             position: relative
             padding-left: 40px
-            margin-bottom: 20px
+            margin-bottom: 15px
             &:last-child
                 margin-bottom: 0
             &::after
@@ -78,57 +74,46 @@
     ol
         counter-reset: section
     ol > li
-        padding-left: 68px
+        padding-left: 40px
         position: relative
         display: flex
         align-items: center
-        margin-bottom: 20px
-        min-height: 47px
+        margin-bottom: 15px
         &:last-child
             margin-bottom: 0
         &::before
             position: absolute
             left: 0
             top: 0
-            display: flex
-            align-items: center
-            justify-content: center
             counter-increment: section
             content: counter(section)
-            background-image: url(../img/general/ol.svg)
-            background-repeat: no-repeat
-            background-position: center center
-            background-size: contain
-            width: 47px
-            height: 47px
+            color: $red
     .table
         overflow: auto
-        margin-top: 20px
+        margin-top: 30px
     table
         width: 100%
         font-size: 16px
         border-spacing: 0
         min-width: 600px
         th
-            background-color: $red
+            background-color: #EEEEEE
             padding: 20px 30px
             text-align: left
             font-size: 18px
             font-weight: 700
             color: #ffffff
             text-transform: uppercase
-            &:nth-child(n + 2)
-                background-color: $red
-                border-left: 3px solid #fff
+            &:first-child
+                background-color: #BDBDBD
         tr
-            background-color: #fff
-            &:nth-child(even)
-                background-color: #F1F1F1
             td
                 padding: 20px 30px
                 font-size: 16px
+                border: 1px solid #EEEEEE
+                border-top: none
                 &:nth-child(n + 2)
-                    border-left: 3px solid #fff
+                    border-left: none
 
 @media (max-width: 1450px)
     .type
