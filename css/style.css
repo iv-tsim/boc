@@ -1996,7 +1996,12 @@ textarea, input {
           flex-direction: row-reverse;
 }
 
+.fifty_reverse .fifty-image {
+  width: 50%;
+}
+
 .fifty_reverse .fifty-content {
+  width: 43.75%;
   padding-right: 0;
   padding-left: calc((100% - 1600px) / 2);
 }
@@ -2534,6 +2539,27 @@ textarea, input {
 .single-container {
   position: relative;
   z-index: 1;
+}
+
+.error {
+  padding-bottom: 150px;
+}
+
+.error-container {
+  position: relative;
+}
+
+.error-title {
+  max-width: 650px;
+  margin-bottom: 30px;
+}
+
+.error-text {
+  max-width: 650px;
+}
+
+.error-text a {
+  color: #FF0B00;
 }
 
 .alertify-notifier .ajs-message.ajs-warning {
