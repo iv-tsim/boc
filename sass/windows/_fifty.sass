@@ -1,0 +1,49 @@
+.fifty
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 70px 0
+    position: relative
+    &-image
+        width: 43.75%
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        position: relative
+        z-index: 1
+        &__sizer
+            padding-bottom: 75%
+    &-content
+        width: 50%
+        padding-right: calc((100% - 1600px) / 2)
+        position: relative
+        z-index: 1
+    &-windows
+        display: flex
+        align-items: flex-start
+        &__item
+            margin-right: 150px
+            &:last-child
+                margin-right: 0
+            &-img
+                margin-bottom: 60px
+            &-title
+                font-size: 36px
+                font-family: 'DINPro-Condensed', sans-serif
+                font-weight: 700
+                margin-bottom: 10px
+            &-subtitle
+                margin-bottom: 25px
+            &-price
+                margin-bottom: 10px
+            &_special
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                .fifty-windows__item-body
+                    margin-top: -140px
+    &_reverse
+        flex-direction: row-reverse
+        .fifty-content
+            padding-right: 0
+            padding-left: calc((100% - 1600px) / 2)

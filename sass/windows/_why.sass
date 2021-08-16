@@ -1,0 +1,32 @@
+.why
+    padding-top: 40px
+    padding-bottom: 120px
+    position: relative
+    .container
+        position: relative
+        z-index: 1
+    &-container
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &-main
+        width: 50%
+    &-list
+        width: 50%
+    &-title
+        max-width: 530px
+        margin-bottom: 30px
+    &-text
+        margin-bottom: 60px
+        max-width: 620px
+        &:last-child
+            margin-bottom: 0
+    &-list
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 50px
+        &__item
+            &-title
+                margin-bottom: 10px
+                span
+                    color: $red
