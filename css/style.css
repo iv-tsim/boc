@@ -4442,8 +4442,12 @@ textarea, input {
 
 .alertify-notifier {
   z-index: 99998;
-  font-family: 'Montserrat';
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.wpcf7-not-valid {
+  border-color: #FF0B00;
 }
 
 div.wpcf7 .ajax-loader, .wpcf7-not-valid-tip, .wpcf7-response-output {
