@@ -58,3 +58,110 @@
 .map
     width: 100%
     height: 500px
+
+@media (max-width: 1630px)
+    .contacts
+        padding-bottom: 90px
+        &-title
+            margin-bottom: 70px
+        &-form
+            margin-bottom: 25px
+            &__title
+                margin-bottom: 70px
+            &__textarea
+                min-height: 140px
+            &__policy
+                margin-right: 20px
+            &__submit
+                min-width: 230px
+        &-phone
+            margin-bottom: 15px
+            a
+                margin-right: 30px
+        &-address
+            margin-top: 50px
+        &-email
+            margin-bottom: 50px
+    .map
+        width: 100%
+        height: 400px
+
+@media (max-width: 1400px)
+    .contacts
+        padding-bottom: 70px
+        &-title
+            margin-bottom: 50px
+        &-form
+            margin-bottom: 20px
+            &__title
+                margin-bottom: 50px
+            &__wrapper
+                max-width: 50%
+        &-phone
+            a
+                margin-right: 25px
+        &-address
+            margin-top: 40px
+        &-email
+            margin-bottom: 40px
+    .map
+        width: 100%
+        height: 300px
+
+@media (max-width: 1200px)
+    .contacts
+        padding-bottom: 60px
+        &-title
+            margin-bottom: 40px
+        &-grid
+            flex-direction: column
+        &-main
+            margin-bottom: 40px
+        &-address
+            margin-top: 30px
+        &-email
+            margin-bottom: 30px
+        &-form
+            grid-gap: 20px
+            &__title
+                margin-bottom: 30px
+            &__wrapper
+                width: 100%
+                max-width: 100%
+
+@media (max-width: 600px)
+    .contacts
+        padding-bottom: 40px
+        &-title
+            margin-bottom: 30px
+        &-main
+            margin-bottom: 30px
+        &-address
+            margin-bottom: 15px
+            margin-top: 20px
+        &-email
+            margin-bottom: 15px
+        &-form
+            grid-gap: 15px
+            margin-bottom: 10px
+            &__title
+                margin-bottom: 20px
+            &__bottom
+                flex-direction: column
+                align-items: flex-start
+            &__policy
+                margin-bottom: 10px
+            &__submit
+                width: 100%
+            &__input
+                grid-column: 2 span / auto
+
+@media (max-width: 400px)
+    .contacts
+        &-phone
+            flex-direction: column-reverse
+            align-items: flex-start
+            span
+                margin-bottom: 5px
+            a
+                margin-right: 0

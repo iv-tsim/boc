@@ -27,6 +27,7 @@
                 margin-right: 0
             &-img
                 margin-bottom: 60px
+                max-width: 100%
             &-title
                 font-size: 36px
                 font-family: 'DINPro-Condensed', sans-serif
@@ -100,3 +101,124 @@
             .selected-bar
                 background: none
                 background-color: $red
+
+@media (max-width: 1630px)
+    .fifty
+        padding: 50px 0
+        &-content
+            padding-right: 15px
+        &-windows
+            &__item
+                margin-right: 80px
+                &-img
+                    margin-bottom: 50px
+                &-title
+                    font-size: 32px
+                &-subtitle
+                    margin-bottom: 20px
+                &_special
+                    .fifty-windows__item-body
+                        margin-top: -140px
+        &_reverse
+            .fifty-content
+                padding-left: 15px
+        &-price
+            &__title
+                margin-bottom: 90px
+            &__bottom
+                margin-top: 90px
+
+@media (max-width: 1400px)
+    .fifty
+        flex-direction: column
+        align-items: flex-start
+        padding: 40px 15px
+        &-image
+            width: 60%
+            margin: 0 auto
+            margin-bottom: 40px
+        &-windows
+            &__item
+                margin-right: 60px
+                &-img
+                    margin-bottom: 40px
+                &-title
+                    font-size: 26px
+                &-subtitle
+                    margin-bottom: 15px
+                &_special
+                    margin-left: 0
+                    margin-right: auto
+                    .fifty-windows__item-body
+                        margin-top: -140px
+        &_reverse
+            flex-direction: column
+            .fifty-content
+                padding-left: 0
+                width: 100%
+            .fifty-image
+                width: 60%
+        &-price
+            &__title
+                margin-bottom: 70px
+            &__bottom
+                margin-top: 70px
+        &-content
+            width: 100%
+
+@media (max-width: 1200px)
+    .fifty
+        &-image
+            width: 70%
+        &_reverse
+            .fifty-image
+                width: 70%
+        &-windows
+            &__item
+                &-img
+                    max-height: 160px
+                    margin-bottom: 20px
+                &_special
+                    .fifty-windows__item-img
+                        max-height: 250px
+                    .fifty-windows__item-body
+                        margin-top: -100px
+
+@media (max-width: 800px)
+    .fifty
+        &-image
+            width: 80%
+        &_reverse
+            .fifty-image
+                width: 80%
+
+@media (max-width: 650px)
+    .fifty
+        padding: 30px 15px
+        &-image
+            width: 100%
+            margin-bottom: 30px
+        &_reverse
+            .fifty-image
+                width: 100%
+        &-windows
+            flex-direction: column
+            &__item
+                margin-right: 0
+                margin-bottom: 25px
+                &:last-child
+                    margin-bottom: 0
+                &-img
+                    max-height: 130px
+                    margin-bottom: 10px
+                &-title
+                    margin-bottom: 5px
+                    font-size: 22px
+                &-subtitle
+                    margin-bottom: 10px
+                &_special
+                    .fifty-windows__item-img
+                        max-height: 200px
+                    .fifty-windows__item-body
+                        margin-top: -70px
+                        transform: translateX(20px)

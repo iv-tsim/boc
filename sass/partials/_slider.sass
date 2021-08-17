@@ -65,32 +65,76 @@
 
 @media (max-width: 1630px)
     .slider
+        padding-top: 80px
         &-arrow
             width: 60px
             height: 60px
             &_next
                 margin-left: 60px
+        &-arrows
+            &__real
+                right: 0
+        &-title
+            margin-bottom: 50px
+        &-img
+            width: calc(100% - 120px)
+        &-container
+            padding-bottom: 80px
 
 @media (max-width: 1200px)
     .slider
+        padding-top: 60px
         &-arrow
             width: 55px
             height: 55px
             &_next
                 margin-left: 55px
+        &-arrows
+            &__real
+                right: 0
+        &-title
+            margin-bottom: 40px
+        &-main
+            width: 100%
+            margin-bottom: 30px
+        &-text, &-title
+            max-width: 100%
+        &-img
+            width: calc(100% - 55px)
+            margin-left: 0
+            &__wrapper
+                width: 100%
+        &-container
+            display: flex
+            flex-direction: column
+            padding-bottom: 60px
 
 @media (max-width: 800px)
     .slider
+        padding-top: 40px
         &-arrow
             width: 50px
             height: 50px
             &_next
                 margin-left: 50px
+        &-title
+            margin-bottom: 30px
+        &-img
+            width: calc(100% - 50px)
+        &-container
+            padding-bottom: 40px
 
 @media (max-width: 600px)
     .slider
+        padding-top: 30px
         &-arrow
             width: 40px
             height: 40px
             &_next
                 margin-left: 40px
+        &-title
+            margin-bottom: 20px
+        &-img
+            width: calc(100% - 40px)
+        &-container
+            padding-bottom: 30px

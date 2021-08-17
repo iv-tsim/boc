@@ -43,9 +43,7 @@ $(document).ready(function() {
 
         });
         let sliderImg = new Swiper('.slider-img', {
-
-            spaceBetween: 140,
-            slidesPerView: 2,
+            
             slidesPerGroup: 1,
             observer: true,
             observeParents: true,
@@ -53,6 +51,16 @@ $(document).ready(function() {
             navigation: {
                 nextEl: '.slider-arrow.slider-arrow_next.slider-arrow__real',
                 prevEl: '.slider-arrow.slider-arrow_prev.slider-arrow__real',
+            },
+            breakpoints: {
+                1630: {
+                    slidesPerView: 2,
+                    spaceBetween: 140
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                }
             }
 
         });

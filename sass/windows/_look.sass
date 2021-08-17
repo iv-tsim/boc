@@ -43,3 +43,58 @@
            margin-right: 25px
         span
             color: $red 
+
+@media (max-width: 1630px)
+    .look
+        &-main
+            padding-right: 15px
+        &-title
+            margin-bottom: 25px
+        &-text
+            margin-bottom: 25px
+        &-warranty
+            img
+                margin-right: 20px
+
+@media (max-width: 1400px)
+    .look
+        flex-direction: column
+        align-items: flex-start
+        padding: 0 15px
+        padding-top: 30px
+        &-slider
+            &__wrapper
+                width: 60%
+                margin: 0 auto
+                margin-bottom: 40px
+        &-main
+            width: 100%
+            padding-right: 0
+        &-title
+            margin-bottom: 25px
+        &-text
+            margin-bottom: 25px
+        &-warranty
+            img
+                margin-right: 20px
+
+@media (max-width: 1100px)
+    .look
+        &-slider
+            &__wrapper
+                width: 70%
+
+@media (max-width: 700px)
+    .look
+        &-slider
+            &__wrapper
+                width: 80%
+
+@media (max-width: 500px)
+    .look
+        &-slider
+            &__wrapper
+                width: 100%
+                margin-bottom: 30px
+            &__arrows
+                transform: translateX(0)

@@ -18,6 +18,7 @@
     &-subtitle
         margin-bottom: 80px
         font-weight: 400
+        font-size: 40px
     &-bottom
         display: flex
         align-items: center
@@ -52,3 +53,65 @@
             background-repeat: no-repeat
             background-position: center center
             background-size: cover
+
+@media (max-width: 1630px)
+    .lhero
+        &-title
+            margin-bottom: 30px
+        &-subtitle
+            margin-bottom: 60px
+            font-size: 36px
+        &-bottom
+            margin-bottom: 100px
+            &__main
+                max-width: 400px
+        &-btn
+            margin-right: 120px
+        &-arrows
+            width: 50%
+    
+@media (max-width: 1400px)
+    .lhero
+        &-title
+            margin-bottom: 25px
+        &-subtitle
+            margin-bottom: 50px
+            font-size: 30px
+        &-bottom
+            margin-bottom: 70px
+        &-btn
+            margin-right: 80px
+
+@media (max-width: 1200px)
+    .lhero
+        &-title
+            margin-bottom: 20px
+        &-subtitle
+            margin-bottom: 40px
+            font-size: 26px
+        &-bottom
+            margin-bottom: 50px
+
+@media (max-width: 750px)
+    .lhero
+        &-container
+            display: flex
+            flex-direction: column
+        &-subtitle
+            margin-bottom: 30px
+            font-size: 22px
+        &-bottom
+            flex-direction: column
+            align-items: flex-start
+            &__main
+                .h4
+                    margin-bottom: 5px
+        &-btn
+            margin-right: 0
+            margin-bottom: 20px
+
+@media (max-width: 600px)
+    .lhero
+        &-subtitle
+            margin-bottom: 20px
+            font-size: 20px

@@ -68,6 +68,11 @@
             &__text
                 h2
                     font-size: 26px
+        &-page
+            &__title
+                margin-bottom: 120px
+            .services-list
+                padding-bottom: 80px
 
 @media (max-width: 1400px)
     .services
@@ -83,6 +88,11 @@
         &-list
             grid-column-gap: 30px
             grid-row-gap: 100px
+        &-page
+            &__title
+                margin-bottom: 100px
+            .services-list
+                padding-bottom: 70px
 
 @media (max-width: 1200px)
     .services
@@ -100,6 +110,9 @@
             grid-template-columns: repeat(3, 1fr)
             grid-column-gap: 25px
             grid-row-gap: 90px
+        &-page
+            .services-list
+                padding-bottom: 60px
 
 @media (max-width: 750px)
     .services
@@ -115,6 +128,9 @@
         &-list
             grid-template-columns: repeat(2, 1fr)
             grid-column-gap: 20px
+        &-page
+            .services-list
+                padding-bottom: 50px
 
 @media (max-width: 550px)
     .services
@@ -124,3 +140,8 @@
             margin-top: 30px
         &-list
             grid-template-columns: repeat(1, 1fr)
+        &-page
+            &__title
+                margin-bottom: 90px
+            .services-list
+                padding-bottom: 40px
