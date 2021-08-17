@@ -3329,6 +3329,20 @@ textarea, input {
     -webkit-transform: translateX(20px);
             transform: translateX(20px);
   }
+  .fifty-price .slider-container .pointer-label {
+    font-size: 24px;
+    top: -40px;
+  }
+  .fifty-price__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fifty-price__bottom-text {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .look {
@@ -3811,6 +3825,58 @@ textarea, input {
   margin-bottom: 70px;
 }
 
+@media (max-width: 1630px) {
+  .steps {
+    padding-bottom: 100px;
+  }
+  .steps-list {
+    grid-row-gap: 50px;
+  }
+  .steps-title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .steps {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .steps-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .steps-main, .steps-list {
+    width: 100%;
+  }
+  .steps-title {
+    margin-bottom: 50px;
+  }
+  .steps-main {
+    margin-bottom: 30px;
+  }
+  .steps-item__number-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .steps {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .steps-title {
+    margin-bottom: 30px;
+  }
+  .steps-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+}
+
 .result {
   position: relative;
   padding-top: 180px;
@@ -3818,6 +3884,7 @@ textarea, input {
   background-image: url(../img/ceilings/dec.svg);
   background-repeat: no-repeat;
   background-position: 10% bottom;
+  background-size: 40%;
 }
 
 .result-container {
@@ -3882,6 +3949,90 @@ textarea, input {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1630px) {
+  .result {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .result-title {
+    margin-bottom: 70px;
+  }
+  .result-list {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .result {
+    padding: 60px 0;
+    background-image: none;
+  }
+  .result-main {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+  .result-list {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .result-list::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #F0F0F0;
+    height: 100%;
+    width: 100%;
+    right: 100%;
+    top: 0;
+  }
+  .result-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .result-title {
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  .result-item__img {
+    margin-bottom: 10px;
+  }
+  .result-item__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .result {
+    padding: 50px 0;
+  }
+  .result-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .result {
+    padding: 35px 0;
+  }
+  .result-title {
+    margin-bottom: 30px;
+  }
+  .result-list {
+    padding: 20px 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .result-item__img {
+    min-height: 0;
+  }
+}
+
 .contacts {
   position: relative;
   padding-bottom: 120px;
@@ -3914,6 +4065,7 @@ textarea, input {
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-bottom: 30px;
+  max-width: 100%;
 }
 
 .contacts-form__wrapper {
@@ -3924,10 +4076,23 @@ textarea, input {
   margin-bottom: 90px;
 }
 
+.contacts-form__input {
+  width: 100%;
+}
+
 .contacts-form__textarea {
-  grid-column: 2 span / auto;
   resize: none;
   min-height: 150px;
+  width: 100%;
+}
+
+.contacts-form span {
+  grid-column: 1 span / auto;
+  width: 100%;
+}
+
+.contacts-form span:last-child {
+  grid-column: 2 span / auto;
 }
 
 .contacts-form__bottom {
@@ -4138,7 +4303,7 @@ textarea, input {
   .contacts-form__submit {
     width: 100%;
   }
-  .contacts-form__input {
+  .contacts-form span {
     grid-column: 2 span / auto;
   }
 }
@@ -4277,4 +4442,11 @@ textarea, input {
 
 .alertify-notifier {
   z-index: 99998;
+  font-family: 'Montserrat';
+  font-size: 18px;
 }
+
+div.wpcf7 .ajax-loader, .wpcf7-not-valid-tip, .wpcf7-response-output {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

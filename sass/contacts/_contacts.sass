@@ -16,14 +16,22 @@
         grid-template-columns: repeat(2, 1fr)
         grid-gap: 30px
         margin-bottom: 30px
+        max-width: 100%
         &__wrapper
             max-width: 550px
         &__title
             margin-bottom: 90px
+        &__input
+            width: 100%
         &__textarea
-            grid-column: 2 span / auto
             resize: none
             min-height: 150px
+            width: 100%
+        span
+            grid-column: 1 span / auto
+            width: 100%
+            &:last-child
+                grid-column: 2 span / auto
         &__bottom
             display: flex
             align-items: center
@@ -153,7 +161,7 @@
                 margin-bottom: 10px
             &__submit
                 width: 100%
-            &__input
+            span
                 grid-column: 2 span / auto
 
 @media (max-width: 400px)

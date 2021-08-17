@@ -6,8 +6,10 @@ $(document).ready(function() {
 
     if ($(window).width() >= 1630) {
         barWidth = 800;
-    } else {
+    } else if ($(window).width() >= 1400) {
         barWidth = $(window).width() / 2 - 15;
+    } else {
+        barWidth = $(window).width() - 30;
     }
 
     $('.fifty-price__input').jRange({
@@ -171,6 +173,30 @@ $(document).ready(function() {
                 ]);
             });
         }
+
+        document.addEventListener(
+            'wpcf7mailsent',
+            function (event) {
+                alertify.success(event.detail.apiResponse.message);
+            },
+            false
+        );
+
+        document.addEventListener(
+            'wpcf7invalid',
+            function (event) {
+                alertify.warning(event.detail.apiResponse.message);
+            },
+            false
+        );
+
+        document.addEventListener(
+            'wpcf7mailfailed',
+            function (event) {
+                alertify.error(event.detail.apiResponse.message);
+            },
+            false
+        );
     });
 
 })()

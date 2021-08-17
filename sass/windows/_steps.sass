@@ -35,3 +35,38 @@
     &-title
         max-width: 600px
         margin-bottom: 70px
+
+@media (max-width: 1630px)
+    .steps
+        padding-bottom: 100px
+        &-list
+            grid-row-gap: 50px
+        &-title
+            margin-bottom: 60px
+
+@media (max-width: 1300px)
+    .steps
+        padding-top: 50px
+        padding-bottom: 70px
+        &-container
+            flex-direction: column
+        &-main, &-list
+            width: 100%
+        &-title
+            margin-bottom: 50px
+        &-main
+            margin-bottom: 30px
+        &-item
+            &__number
+                &-wrapper
+                    margin-bottom: 0
+
+@media (max-width: 800px)
+    .steps
+        padding-top: 40px
+        padding-bottom: 50px
+        &-title
+            margin-bottom: 30px
+        &-list
+            grid-template-columns: 1fr
+            grid-gap: 25px
