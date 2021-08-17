@@ -34,9 +34,85 @@
         display: grid
         grid-template-columns: repeat(2, 1fr)
         grid-row-gap: 200px
+        grid-column-gap: 30px
     &-item
         &__img
             margin-bottom: 20px
-            min-height: 56px
+            height: 56px
         &__title
             margin-bottom: 5px
+
+@media (max-width: 1630px)
+    .about
+        padding-top: 90px
+        padding-bottom: 100px
+        &-title
+            margin-bottom: 30px
+        &-text
+            margin-bottom: 40px
+        &-img
+            left: 32%
+            max-width: 320px
+        &-list
+            grid-row-gap: 150px
+        &-item
+            &__img
+                margin-bottom: 15px
+            &__title
+                margin-bottom: 5px
+
+@media (max-width: 1400px)
+    .about
+        padding-top: 70px
+        padding-bottom: 80px
+        &-main
+            grid-column: 2 / 12
+        &-title
+            margin-bottom: 25px
+        &-text
+            margin-bottom: 30px
+        &-img
+            display: none
+        &-list
+            grid-column: 12 / 25
+            grid-row-gap: 80px
+        &-item
+            &__img
+                height: 50px
+
+@media (max-width: 1200px)
+    .about
+        padding: 50px 0
+        &-container
+            display: flex
+            flex-direction: column
+        &-main
+            margin-bottom: 30px
+        &-title
+            margin-bottom: 15px
+        &-text
+            max-width: 100%
+            margin-bottom: 20px
+        &-img
+            display: none
+        &-list
+            grid-column-gap: 20px
+            grid-row-gap: 30px
+        &-item
+            &__img
+                height: 45px
+                margin-bottom: 10px
+
+@media (max-width: 800px)
+    .about
+        padding: 40px 0
+
+@media (max-width: 600px)
+    .about
+        padding: 30px 0
+
+@media (max-width: 400px)
+    .about
+        &-list
+            grid-template-columns: 1fr
+            grid-row-gap: 20px

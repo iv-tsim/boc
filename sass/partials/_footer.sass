@@ -53,3 +53,76 @@
         margin-bottom: 30px
     &-socials
         margin-bottom: 50px
+
+@media (max-width: 1630px)
+    .footer
+        padding-top: 60px
+        padding-bottom: 90px
+        &-logo
+            margin-bottom: 40px
+        &-left
+            &__item
+                margin-bottom: 12px
+        &-menu
+            &__item
+                margin-bottom: 20px
+        &-address
+            margin-bottom: 25px
+        &-socials
+            margin-bottom: 40px
+
+@media (max-width: 1300px)
+    .footer
+        &-left
+            grid-column: 10 span / auto
+        &-menu
+            grid-column: 7 span / auto
+
+@media (max-width: 1200px)
+    .footer
+        padding-top: 50px
+        padding-bottom: 70px
+        &-logo
+            margin-bottom: 30px
+        &-menu
+            &__item
+                margin-bottom: 15px
+        &-address
+            margin-bottom: 20px
+        &-socials
+            margin-bottom: 30px
+
+@media (max-width: 1000px)
+    .footer
+        padding: 50px 0
+        &-left
+            grid-column: 11 span / auto
+        &-menu
+            grid-column: 6 span / auto
+
+@media (max-width: 750px)
+    .footer
+        padding: 40px 0
+        &-logo
+            margin-bottom: 20px
+        &-address
+            margin-bottom: 15px
+        &-socials
+            margin-bottom: 20px
+        &-container
+            display: flex
+            flex-direction: column
+        &-menu
+            order: 0
+            margin-bottom: 20px
+        &-contacts
+            order: 1
+            margin-bottom: 20px
+        &-left
+            order: 2
+        &-logo
+            max-width: 300px
+
+@media (max-width: 600px)
+    .footer
+        padding: 30px 0

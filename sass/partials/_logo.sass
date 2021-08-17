@@ -11,10 +11,61 @@
             font-weight: 700
             text-transform: uppercase
             font-size: 27px
-            margin-right: 12px
             span
                 font-size: 20px
         div
             color: $grey
             font-size: 11px
             letter-spacing: -0.7px
+
+@media (max-width: 1700px)
+    .logo
+        &-text
+            b
+                font-size: 24px
+                span
+                    font-size: 18px
+            div
+                font-size: 10px
+        &-img
+            max-width: 50px
+
+@media (max-width: 1200px)
+    .logo
+        &-text
+            b
+                font-size: 22px
+                span
+                    font-size: 16px
+            div
+                font-size: 9px
+        &-img
+            max-width: 45px
+
+@media (max-width: 800px)
+    .logo
+        max-width: 250px
+        &-text
+            b
+                font-size: 18px
+                span
+                    font-size: 14px
+            div
+                font-size: 9px
+        &-img
+            margin-right: 10px
+            max-width: 40px
+
+@media (max-width: 600px)
+    .logo
+        max-width: 220px
+        &-text
+            b
+                font-size: 16px
+                span
+                    font-size: 12px
+            div
+                font-size: 8px
+        &-img
+            margin-right: 10px
+            max-width: 35px

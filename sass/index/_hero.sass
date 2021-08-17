@@ -30,3 +30,52 @@
         top: 50%
         transform: translate(50%, -50%)
         z-index: 1
+
+@media (max-width: 1630px)
+    .hero
+        padding-top: 40px
+        margin-bottom: -40px
+        &-title
+            margin-bottom: 35px
+        &-subtitle
+            margin-bottom: 40px
+
+@media (max-width: 1200px)
+    .hero
+        padding-top: 30px
+        margin-bottom: -40px
+        &-title
+            margin-bottom: 25px
+        &-subtitle
+            margin-bottom: 30px
+
+@media (max-width: 900px)
+    .hero
+        margin-bottom: -20px
+        &-title
+            margin-bottom: 20px
+        &-subtitle
+            margin-bottom: 20px
+
+@media (max-width: 750px)
+    .hero
+        margin-bottom: 0
+        padding-bottom: 30px
+        &-container
+            display: flex
+            flex-direction: column
+        &-text
+            margin-bottom: 30px
+        &-img
+            &__wrapper
+                width: 100%
+                max-width: 75%
+                margin: 0 auto
+
+@media (max-width: 600px)
+    .hero
+        &-text
+            margin-bottom: 20px
+        &-img
+            &__wrapper
+                max-width: 80%
