@@ -783,6 +783,9 @@ textarea, input {
 }
 
 @media (max-width: 1700px) {
+  .logo {
+    max-width: 280px;
+  }
   .logo-text b {
     font-size: 24px;
   }
@@ -1489,7 +1492,26 @@ textarea, input {
 
 @media (max-width: 1700px) {
   .header {
-    padding: 20px 50px;
+    padding: 20px;
+  }
+  .header-menu__item {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  .header-menu__item_big {
+    margin-right: 20px;
+  }
+  .header-phone {
+    font-size: 18px;
+  }
+  .header-btn {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header {
+    padding: 20px 40px;
   }
   .header-menu {
     display: none;
@@ -4453,4 +4475,3 @@ textarea, input {
 div.wpcf7 .ajax-loader, .wpcf7-not-valid-tip, .wpcf7-response-output {
   display: none !important;
 }
-/*# sourceMappingURL=style.css.map */

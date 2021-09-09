@@ -32,16 +32,7 @@ $(document).ready(function() {
             spaceBetween: 30,
             slidesPerView: 1,
             slidesPerGroup: 1,
-            observer: true,
-            observeParents: true,
-            touchEventsTarget: 'wrapper',
-            on: {
-                slideChange() {
-
-                    heroImgSlider.slideTo(this.realIndex);
-
-                }
-            }
+            allowTouchMove: false
 
         });
         let sliderImg = new Swiper('.slider-img', {
@@ -73,6 +64,7 @@ $(document).ready(function() {
             slidesPerGroup: 1,
             observer: true,
             observeParents: true,
+            loop: true,
             touchEventsTarget: 'wrapper',
             navigation: {
                 nextEl: '.slider-arrow.slider-arrow_next.look-arrow',
@@ -86,6 +78,7 @@ $(document).ready(function() {
             slidesPerView: 1,
             slidesPerGroup: 1,
             observer: true,
+            loop: true,
             effect: 'fade',
             observeParents: true,
             touchEventsTarget: 'wrapper',
@@ -101,9 +94,13 @@ $(document).ready(function() {
             slidesPerView: 1,
             slidesPerGroup: 1,
             observer: true,
+            loop: true,
             observeParents: true,
             effect: 'fade',
             touchEventsTarget: 'wrapper',
+            autoplay: {
+                delay: 3500,
+            },
             navigation: {
                 nextEl: '.slider-arrow.slider-arrow_next.hero-arrow',
                 prevEl: '.slider-arrow.slider-arrow_prev.hero-arrow',
